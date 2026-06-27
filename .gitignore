@@ -1,0 +1,28 @@
+# Claude Code Security Workflow 生产技能 - 专属忽略规则
+# 1. 忽略技能运行临时产物、日志、缓存
+*.log
+*.tmp
+cache/
+output/
+
+# 2. 保留核心源码/配置（必需！禁止忽略核心技能文件）
+!SKILL.md
+!config.json
+!scripts/
+!references/
+!templates/
+!examples/
+
+# 3. 忽略本地自定义调试配置（避免开发配置污染生产）
+config.local.json
+.env
+.env.*
+
+# 4. 忽略脚本运行权限缓存、编译产物
+scripts/__pycache__/
+scripts/*.pyc
+*.sh.bak
+
+# 5. 忽略审计报告输出产物（按需保留，生产不提交扫描报告）
+security-audit-*.md
+*.audit.report

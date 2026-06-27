@@ -1,0 +1,15 @@
+{
+  "scan_exclude_dirs": ["node_modules", "venv", ".venv", "dist", "build", "out", ".git"],
+  "scan_exclude_files": ["*.md", "*.log", "LICENSE"],
+  "enable_secret_scan": true,
+  "enable_code_vuln_scan": true,
+  "enable_dependency_scan": true,
+  "auto_fix_low_risk": true,
+  "auto_fix_medium_risk": false,
+  "block_git_commit_high": true,
+  "risk_threshold": {
+    "critical": 0,
+    "high": 3,
+    "medium": 10
+  }
+}
