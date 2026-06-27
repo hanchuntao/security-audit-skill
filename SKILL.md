@@ -1,15 +1,16 @@
+﻿---
+name: security-audit-skill
+description: 企业级代码安全审计工作流，自动扫描代码漏洞、密钥泄露、依赖风险、不规范编码，覆盖 Web 前后端、脚本、配置文件；适用于日常编码、提交代码、CR 评审、上线前核查，自动拦截高危安全问题，输出标准化整改报告
+version: 2.0.0
+when_to_use: 1. 编写/修改业务代码后；2. Git 提交前；3. 进行代码评审；4. 项目上线前自查；5. 用户要求安全检查、漏洞排查、代码加固
+tags: ["安全审计", "代码风控", "漏洞扫描", "合规检查", "DevSecOps"]
+allowed-tools: [Read, Grep, Glob, Bash, Lint]
+max_context_tokens: 12000
+auto_trigger_on: [file-save, git-pre-commit]
+severity_level: high
+author: Enterprise DevSec Team
+production_mode: true
 ---
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 41b1ca04b8a988d8362f0617c7907a58_743d351d722c11f1897e5254002afed2
-    ReservedCode1: G6KnM2327d4O1MHCoT18yfyaTrsFEL+qXRmSNb13aY6d32U8Vn8b0SGTa7N0Wk9zm4df6gBZgj4zjbMaApUiy05MKbdQWMORgkEOtuVWPFwrFNAFeROif0vC7bYlJIJ7odvaRVJHg9pHRNJB6Krcm+2eCqcjc/QMbAzuJaxPGbBrq5XGLOTMpyXEHtE=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 41b1ca04b8a988d8362f0617c7907a58_743d351d722c11f1897e5254002afed2
-    ReservedCode2: G6KnM2327d4O1MHCoT18yfyaTrsFEL+qXRmSNb13aY6d32U8Vn8b0SGTa7N0Wk9zm4df6gBZgj4zjbMaApUiy05MKbdQWMORgkEOtuVWPFwrFNAFeROif0vC7bYlJIJ7odvaRVJHg9pHRNJB6Krcm+2eCqcjc/QMbAzuJaxPGbBrq5XGLOTMpyXEHtE=
----
-
-
 
 # Security Workflow 企业安全审计技能
 
@@ -74,10 +75,10 @@ AIGC:
 4. 最终输出整体安全评分与整改完成度
 
 ## 使用指令
-- `/security-audit` 全项目安全扫描
-- `/security-fix` 自动修复可处理低风险问题
-- `/security-report` 生成完整审计报告
-- `/security-check-file` 检查当前单个文件
+- /security-audit 全项目安全扫描
+- /security-fix 自动修复可处理低风险问题
+- /security-report 生成完整审计报告
+- /security-check-file 检查当前单个文件
 
 ## 生产环境约束与边界
 1. 严格隔离业务代码，不修改业务核心逻辑，仅修复低风险安全规范问题
@@ -85,4 +86,3 @@ AIGC:
 3. 所有扫描、修改记录可追溯、可逆、可复盘，满足生产合规审计
 4. 跳过第三方依赖、编译产物、静态资源、文档目录，不产生无效扫描
 5. 高危风险强制拦截，杜绝带漏洞代码上线，保障生产环境安全
-*（内容由AI生成，仅供参考）*
