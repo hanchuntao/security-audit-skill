@@ -1,4 +1,5 @@
 {
+  "locale": "en",
   "scan_exclude_dirs": ["node_modules", "venv", ".venv", "dist", "build", "out", ".git"],
   "scan_exclude_files": ["*.md", "*.log", "LICENSE"],
   "enable_secret_scan": true,

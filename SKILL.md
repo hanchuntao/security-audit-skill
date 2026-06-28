@@ -46,6 +46,11 @@ production_mode: true
 ### 步骤1：初始化扫描配置
 读取当前技能 config.json 配置，加载扫描阈值、黑白名单、豁免目录、风险等级定义，启用生产严格模式。
 
+**语言/Locale 选择**：读取 `config.json` 中的 `locale` 字段：
+- `"en"`（默认）→ 加载 `templates/security-audit-report.md`
+- `"zh"` → 加载 `templates/security-audit-report.zh.md`
+- 用户可通过修改 `config.json` 或传参 `locale=zh` 切换语言
+
 ### 步骤2：全量文件扫描
 通过 Glob 遍历项目源码目录，跳过 node_modules、venv、dist、build 等编译目录；对源码、配置、脚本文件执行多维度安全检测。
 
