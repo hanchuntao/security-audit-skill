@@ -10,6 +10,7 @@ EXCLUDE_DIRS=(
   --exclude-dir=dist
   --exclude-dir=build
   --exclude-dir=out
+  --exclude-dir=.security-audit-data
 )
 
 SECRET_PATTERN='(password|secret|token|ak|sk|access_key|private_key)="?.+"?'
