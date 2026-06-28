@@ -27,5 +27,5 @@ scripts/*.pyc
 /security-audit-*.md
 *.audit.report
 
-# 6. 忽略 security-workflow 运行时产物
-.security-workflow-data/
+# 6. 忽略审计运行时产物
+.security-audit-data/
