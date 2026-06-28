@@ -74,6 +74,12 @@ production_mode: true
 3. 高危问题必须明确告知：是否阻断提交/上线
 4. 最终输出整体安全评分与整改完成度
 
+## 语言 / Locale
+- 默认输出语言：**英文**（`templates/security-audit-report.md`）
+- 中文模板：`templates/security-audit-report.zh.md`
+- 切换中文：在扫描参数中指定 `locale=zh` 或用户明确要求中文报告
+- 合规术语（等保2.0 等）仅在中文本地化报告中出现
+
 ## 使用指令
 - /security-audit 全项目安全扫描
 - /security-fix 自动修复可处理低风险问题
