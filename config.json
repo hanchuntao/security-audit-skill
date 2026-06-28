@@ -1,6 +1,6 @@
 {
   "locale": "en",
-  "scan_exclude_dirs": ["node_modules", "venv", ".venv", "dist", "build", "out", ".git", ".security-audit-data"],
+  "scan_exclude_dirs": ["node_modules", "venv", ".venv", "dist", "build", "out", ".git", ".security-audit-data", "examples", "references"],
   "scan_exclude_files": ["*.md", "*.log", "LICENSE"],
   "enable_secret_scan": true,
   "enable_code_vuln_scan": true,
