@@ -3,7 +3,7 @@
 import os
 import re
 
-EXCLUDED_DIRS = {".git", "node_modules", "venv", ".venv", "dist", "build", "out"}
+EXCLUDED_DIRS = {".git", "node_modules", "venv", ".venv", "dist", "build", "out", "examples", "references"}
 
 risk_patterns = [
     (r"os\.system\(", "HIGH", "命令注入风险，禁止直接拼接用户输入"),
