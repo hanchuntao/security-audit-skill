@@ -1,16 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 41b1ca04b8a988d8362f0617c7907a58_76f1e034722c11f1897e5254002afed2
-    ReservedCode1: nrGKbAd1O9Mk0WKUfdK8ieYVl1FmGyiKU3VOGUtTF++pqdx33+PFiAoXIJXDNplqxErNvzEpT7X8S34RgZdfo+H3n1gtum80q5wCpA67BeJ4JfPcjjN3mZ3fKrtGHYCm4X/QXZoGEZbKVWWAGgaOYCsZwB8miNmF38xOmn0o4kpMUjya0dVQz2ni9+w=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 41b1ca04b8a988d8362f0617c7907a58_76f1e034722c11f1897e5254002afed2
-    ReservedCode2: nrGKbAd1O9Mk0WKUfdK8ieYVl1FmGyiKU3VOGUtTF++pqdx33+PFiAoXIJXDNplqxErNvzEpT7X8S34RgZdfo+H3n1gtum80q5wCpA67BeJ4JfPcjjN3mZ3fKrtGHYCm4X/QXZoGEZbKVWWAGgaOYCsZwB8miNmF38xOmn0o4kpMUjya0dVQz2ni9+w=
----
-
-
-
 # 典型漏洞案例
 
 ## 案例 1：硬编码密钥（Critical）
@@ -53,5 +40,3 @@ def ping(host):
 **风险**：`host = "8.8.8.8; rm -rf /"` 可导致任意命令执行。
 
 **修复**：使用 subprocess.run 并做参数校验。
-*（内容由AI生成，仅供参考）*
-*（内容由AI生成，仅供参考）*

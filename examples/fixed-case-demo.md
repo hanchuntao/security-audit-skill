@@ -1,16 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 41b1ca04b8a988d8362f0617c7907a58_77d54b93722c11f1aabe5254007bceed
-    ReservedCode1: JLSMM9rzi5fN/GXA9fOkOKAajUm3++U3NJfUHSabVEoXpgb1Tq9H3et/FrqJGOjq1j/k+tNN+/r3gEDABOOX7PZZria/TYGgc9HccHse3NZ/tnTYoYXs6fvgjeB6qOMguxE85zzxL/YeqNSCuNEaWNN1+ULmHo8vyouKPxbkuxER6KohMiLG4yp2XDg=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 41b1ca04b8a988d8362f0617c7907a58_77d54b93722c11f1aabe5254007bceed
-    ReservedCode2: JLSMM9rzi5fN/GXA9fOkOKAajUm3++U3NJfUHSabVEoXpgb1Tq9H3et/FrqJGOjq1j/k+tNN+/r3gEDABOOX7PZZria/TYGgc9HccHse3NZ/tnTYoYXs6fvgjeB6qOMguxE85zzxL/YeqNSCuNEaWNN1+ULmHo8vyouKPxbkuxER6KohMiLG4yp2XDg=
----
-
-
-
 # 修复标准案例
 
 ## 案例 1：硬编码密钥 → 环境变量
@@ -48,5 +35,3 @@ def ping(host):
         raise ValueError("Invalid host")
     subprocess.run(["ping", "-c", "4", host])
 ```
-*（内容由AI生成，仅供参考）*
-*（内容由AI生成，仅供参考）*

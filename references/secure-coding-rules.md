@@ -1,16 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 41b1ca04b8a988d8362f0617c7907a58_7502af5d722c11f1897e5254002afed2
-    ReservedCode1: N0kKikHp9zWgACVZpUEb5OFa2MO811IzueQZqD1jmWqOzY2slVSFHEQPnLXZ8b13l2iYwyn7bdHEc61E6dcu8DskuoJyD0LNEw+wTu+zHkPQubnCGW2h8MxQUtWlzBoqNfQMHV18M6oGrR4kIK/HnVlD7SjJhr3u9CIKyRHDghfG57DVbNckCHaDvXc=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 41b1ca04b8a988d8362f0617c7907a58_7502af5d722c11f1897e5254002afed2
-    ReservedCode2: N0kKikHp9zWgACVZpUEb5OFa2MO811IzueQZqD1jmWqOzY2slVSFHEQPnLXZ8b13l2iYwyn7bdHEc61E6dcu8DskuoJyD0LNEw+wTu+zHkPQubnCGW2h8MxQUtWlzBoqNfQMHV18M6oGrR4kIK/HnVlD7SjJhr3u9CIKyRHDghfG57DVbNckCHaDvXc=
----
-
-
-
 # 团队安全编码规范
 
 ## 1. 密钥规范
@@ -29,5 +16,3 @@ AIGC:
 ## 4. 依赖规范
 - 禁止使用终止维护、存在高危CVE的版本
 - 禁止引入测试版、非正式稳定依赖
-*（内容由AI生成，仅供参考）*
-*（内容由AI生成，仅供参考）*

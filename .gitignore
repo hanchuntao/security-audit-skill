@@ -24,5 +24,8 @@ scripts/*.pyc
 *.sh.bak
 
 # 5. 忽略审计报告输出产物（按需保留，生产不提交扫描报告）
-security-audit-*.md
+/security-audit-*.md
 *.audit.report
+
+# 6. 忽略 security-workflow 运行时产物
+.security-workflow-data/
